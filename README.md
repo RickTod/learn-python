@@ -1,23 +1,22 @@
-# learn-python
+### PROJETO 01 
+#### DECIFRANDO CÓDIGO MORSE
 
-Repositório destinado ao ensino da linguagem python para iniciantes.
+### Como utilizar:
 
-<img src="imgs/python.jpg" style="max-width:1000px; "/>
-
-
-### Conteúdo
----
-1. Fundamentos
-2. Pandas
-3. Visualização de Dados
-4. Análise de Dados
-5. Ingestão de dados
-
-### Organização do repositório
----
-O repositório está organizado da seguinte forma
-- DESAFIOS : pequenos desafios de programação para testar suas habilidades de código e raciocínio lógico ;
-- NOTEBOOKS : notebooks com exemplos dos conteúdos abordados ;
-- PROJETOS : aplicação dos conteúdos abordados em pequenos projetos. 
-
-As imagens utilizadas nos notebooks foram extraídas de: https://pythoniluminado.netlify.app
+1. Crie um ambiente virtual
+```
+python -m venv env
+```
+2. Ative o ambiente virtual
+3. Instale o requirements (se necessário)
+```
+pip install -r requirements.txt
+```
+4. Execute o script passando a mensagem em morse
+```
+python decode_morse.py '-.-. .- .-. --- .-.. .. -. .-'
+```
+5. O retorno da execução deve ser:
+```
+Mensagem decifrada: CAROLINA
+```
