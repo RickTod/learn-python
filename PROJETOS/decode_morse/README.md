@@ -3,20 +3,8 @@
 
 ### Como utilizar:
 
-1. Crie um ambiente virtual
-```
-python -m venv env
-```
-2. Ative o ambiente virtual
-3. Instale o requirements (se necessário)
-```
-pip install -r requirements.txt
-```
-4. Execute o script passando a mensagem em morse
-```
-python decode_morse.py '-.-. .- .-. --- .-.. .. -. .-'
-```
-5. O retorno da execução deve ser:
-```
-Mensagem decifrada: CAROLINA
-```
+Deve ser passada uma mensagem, via terminal, onde o código deva ler uma frase em morse, traduzi-la e armazena-la em um csv com o respectivo datetime da execução.
+
+OBS: as letras são separadas por um espaço e as palavras por dois espaços.
+
+OBS2: o dicionário de morse e o file path não devem ser expostos no código que faz a ação(decode_morse.py). Os respectivos se encontram no arquivo config.py, que é importado no código do arquivo decode_morse.py.
